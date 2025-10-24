@@ -19,7 +19,7 @@
 
        <div class=" bg-green-100 p-4 rounded-lg shadow-inner"> 
         <p class="text-sm font-semibold text-gray-700">Current Balance</p>
-    <p class="text-4xl font-extrabold text-green-700">$1000.00</p>
+    <p class="text-4xl font-extrabold text-green-700">$<span  id="currentbalance">1000.00</span></p>
     </div>
     <div class="grid grid-cols-2 gap-4 mt-8">
                 <button id="show-add-btn" class="cursor-pointer flex flex-col items-center justify-center p-4 bg-pink-500 text-white rounded-lg shadow-md hover:bg-pink-600 font-semibold transition-colors active:scale-95">
@@ -40,29 +40,29 @@
       <div class="div2 absolute inset-0 hidden ">
 
        <h2 class="text-2xl font-bold text-pink-600 mt-2 mb-4">Add Money</h2>
-            <form id="add-form" class="space-y-4">
+            <section id="add-form" class="space-y-4">
                 <label for="add-amount" class="block text-sm font-medium text-gray-700 mb-6">Enter Amount</label>
                 <input type="number" id="add-amount" placeholder="e.g., 50.00" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500" min="0" step="0.01">
                 <p id="add-error" class="text-red-500 text-sm hidden">Please enter a valid positive amount.</p>
-                <button type="submit" id="Confirmadd" class="w-full py-3 bg-pink-500 text-white rounded-lg font-semibold hover:bg-pink-600 transition-colors active:scale-95 mt-4 cursor-pointer">
+                <button id="Confirmadd" class="w-full py-3 bg-pink-500 text-white rounded-lg font-semibold hover:bg-pink-600 transition-colors active:scale-95 mt-4 cursor-pointer">
                     Confirm Add
                 </button>
-            </form>
-            <button id="back-from-add" class="text-[1.1rem] text-gray-500 hover:text-gray-700 mt-8 cursor-pointer">← Back to Dashboard</button>
+            </section>
+            <button id="back-from-add" class="text-[1.1rem] text-gray-500 hover:text-gray-700 mt-4 cursor-pointer">← Back to Dashboard</button>
       </div>
 <!-- div 3 -->
     <div class="div3 absolute inset-0 hidden">
 
        <h2 class="text-2xl font-bold text-purple-500 mt-2 mb-4">Withdraw Money</h2>
-            <form id="withdraw-form" class="space-y-4">
+            <section id="withdraw-form" class="space-y-4">
                 <label for="add-amount" class="block text-sm font-medium text-gray-700 mb-6">Enter Amount</label>
                 <input type="number" id="withdraw-amount" placeholder="e.g., 50.00" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500" min="0" step="0.01">
                 <p id="add-error" class="text-purple-500 text-sm hidden">Please enter a valid positive amount.</p>
-                <button type="submit" id="confirmwithdraw" class="w-full py-3 bg-purple-500 text-white rounded-lg font-semibold hover:bg-purple-600 transition-colors active:scale-95 mt-4 cursor-pointer">
+                <button  id="confirmwithdraw" class="w-full py-3 bg-purple-500 text-white rounded-lg font-semibold hover:bg-purple-600 transition-colors active:scale-95 mt-4 cursor-pointer">
                     Confirm Withdraw
                 </button>
-            </form>
-            <button id="back-from-add" class="text-[1.1rem] text-gray-500 hover:text-gray-700 mt-8 cursor-pointer">← Back to Dashboard</button>
+            </section>
+            <button id="back-from-add" class="text-[1.1rem] text-gray-500 hover:text-gray-700 mt-4 cursor-pointer">← Back to Dashboard</button>
       </div>
 <!-- div 4 -->
    <div class="div4 absolute inset-0 hidden ">
